@@ -1,0 +1,62 @@
+/* src/components/Menu.css */
+.menu {
+  padding: 1rem;
+  background-color: #fffefb;
+  font-family: 'Poppins', sans-serif;
+}
+
+.menu h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #d35400;
+  /* margin-bottom: 2rem; */
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.menu-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  text-align: center;
+  padding: 1rem;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.menu-card h3 {
+  margin: 1rem 0 0.5rem;
+  color: #333;
+}
+
+.menu-card p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.menu-card span {
+  display: inline-block;
+  background-color: #ff6b6b;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  font-weight: 500;
+}

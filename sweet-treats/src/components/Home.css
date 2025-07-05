@@ -1,0 +1,116 @@
+/* src/components/Home.css */
+.home {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  padding-bottom: 2rem;
+}
+
+/* src/components/Home.css */
+.hero {
+  background-image: url('https://img.freepik.com/free-vector/pink-sweet-food-seamless-pattern_1308-132714.jpg'); /* adjust path if needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 6rem 2rem;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+/* Optional: dark overlay */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* dark overlay */
+  z-index: 1;
+  border-radius: 0;
+}
+
+.hero h1,
+.hero p,
+.hero button {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+}
+
+.hero button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #e55050;
+}
+
+
+.about {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.bestsellers {
+  padding: 2rem;
+  background: #fff8f2;
+  text-align: center;
+}
+
+.bestsellers h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  max-width: 280px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #d35400;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}

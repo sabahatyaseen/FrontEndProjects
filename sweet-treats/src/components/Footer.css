@@ -1,0 +1,76 @@
+/* src/components/Footer.css */
+.footer {
+  background-color: #4d4c5c;
+  padding: 2rem 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: #ffff;
+  text-align: center;
+  border-top: 1px solid #f0dcdc;
+}
+
+.footer-brand h2 {
+  color: #d35400;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-brand p {
+  font-size: 0.95rem;
+  color: #fff;
+  /* margin-bottom: 1.5rem; */
+}
+
+.footer-links {
+  margin-bottom: 1.5rem;
+}
+
+.footer-links h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #d35400;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 0.3rem 0;
+}
+
+.footer-links a {
+    color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #ff6b6b;
+}
+
+.footer-social {
+  margin-bottom: 1.5rem;
+}
+
+.footer-social h4 {
+  font-size: 1.1rem;
+  color: #d35400;
+  margin-bottom: 0.5rem;
+}
+
+.footer-social .icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid #f0dcdc;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  margin-top: 1rem;
+}
+
+/* Optional: Responsive grid-style footer (future enhancement) */

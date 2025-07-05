@@ -1,0 +1,99 @@
+/* src/components/Navbar.css */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.navbar__logo {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #ff6b6b;
+}
+
+.navbar__links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar__links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navbar__links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #ff6b6b;
+  transition: width 0.3s;
+}
+
+.navbar__links a:hover {
+  color: #ff6b6b;
+}
+
+.navbar__links a:hover::after {
+  width: 100%;
+}
+
+.navbar__toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar__toggle {
+    display: flex;
+  }
+
+  .navbar__links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 2rem;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    gap: 1rem;
+    width: 150px;
+  }
+
+  .navbar__links.open {
+    display: flex;
+  }
+}
